@@ -166,6 +166,29 @@ def name(**kwargs):
     
 dic ={1:"maryam",2:"ali",3:"faiza"}
 name(**dic)
+
+
+## Python closures:
+def outer():
+     def inner():
+         x=20
+         return x
+         
+     return inner
+     
+i =outer()
+print(i())
+
+#Another example:
+def outer():
+     def inner():
+        print("hello")
+           
+     return inner
+     
+r =outer()
+r()
+
 #Example of Memorization using decorators in python:
 # Simple recursive program to find factorial
 def factorial(num):
