@@ -150,10 +150,13 @@ print("%.3f"%f) # work same as round
 
 
 #Example of *args and **kwargs:
-
-# example of *args:
-
-
+#Example of *args:
+def name(*args):
+    for i in args:
+        print(i)
+        
+lst = ["maryam","mujahid","areej"]
+name(*lst)
 
 
 # example of**kwargs:
