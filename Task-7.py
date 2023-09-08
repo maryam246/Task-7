@@ -162,9 +162,9 @@ name(*lst)
 # example of**kwargs:
 def name(**kwargs):
     for key,value in kwargs.items():
-    print(key,value)
+        print(key,value)
     
-dic ={1:"maryam",2:"ali",3:"faiza"}
+dic ={"a":"maryam","b":"ali","c":"faiza"}
 name(**dic)
 
 
